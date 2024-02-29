@@ -1,0 +1,51 @@
+.poster {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.posterSwitchZone {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 3px dotted var(--accent-color);
+  border-radius: 30px;
+}
+
+.posterSwitchZoneContent {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+
+  &>svg {
+    width: 20%;
+    height: 20%;
+    color: var(--accent-color);
+  }
+}
+
+
+.posterImageWrapper {
+  min-width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 250, 250, 0.1);
+  cursor: pointer;
+}
+
+.posterImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

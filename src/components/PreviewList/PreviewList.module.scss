@@ -1,0 +1,13 @@
+.previewList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.activeItem {
+  border: 2px dotted var(--accent-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+}

@@ -1,0 +1,10 @@
+@import './styles/variables.scss';
+@import './styles/null.scss';
+
+body {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}

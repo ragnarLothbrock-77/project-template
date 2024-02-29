@@ -1,0 +1,49 @@
+.modal {
+  position: absolute;
+  top: -100%;
+  opacity: 0;
+  left: 0;
+  background: var(--modal-back-mask);
+  width: 100%;
+  min-height: 100lvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.opened {
+  top: 0;
+  opacity: 1;
+}
+
+.modalBody {
+  position: relative;
+  width: var(--modal-window-width);
+  height: var(--modal-window-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 50;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(30px);
+  }
+}
+
+.modalImage {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  width: auto;
+}

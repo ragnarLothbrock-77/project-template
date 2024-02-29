@@ -66,7 +66,7 @@ export const buildLoaders = (options: BuildOptions): ModuleOptions['rules'] => {
 
 
   const assetsLoader = {
-    test: /\.(png|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpg|jpeg|gif|webp)$/i,
     type: 'asset/resource',
   }
 
